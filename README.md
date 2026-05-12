@@ -81,7 +81,7 @@ Slot 5: G3, G4   → Final output Y
 |File                        |Description                        |
 |----------------------------|-----------------------------------|
 |code/arduino_rfid.ino       |Arduino RFID reader sketch         |
-|code/rfid_display_arduino.py|Pi display script                  |
+|code/combinational_logic.py |Pi display script                  |
 |code/display_test_mac.py    |Mac simulation (no hardware needed)|
 
 ### PCB
@@ -122,6 +122,20 @@ python3 display_test_mac.py
 -----
 
 ## Wiring
+
+### Raspberry Pi — RC522 Readers
+
+```
+MOSI → GPIO10
+MISO → GPIO9
+SCK  → GPIO11
+RST  → GPIO25
+CS1  → GPIO5
+CS2  → GPIO6
+CS3  → GPIO13
+CS4  → GPIO19
+CS5  → GPIO26
+```
 
 ### Arduino Mega — RC522 Readers
 

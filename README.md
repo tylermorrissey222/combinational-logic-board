@@ -151,6 +151,20 @@ CS4  → Pin 43
 CS5  → Pin 49
 ```
 
+### Raspberry Pi Pico 2 — RC522 Readers
+
+```
+MOSI → GPIO3
+MISO → GPIO4
+SCK  → GPIO2
+RST  → GPIO6
+CS1  → GPIO5
+CS2  → GPIO9
+CS3  → GPIO13
+CS4  → GPIO10
+CS5  → GPIO11
+```
+
 ### Raspberry Pi — Input Switches
 
 ```
@@ -159,6 +173,19 @@ Switch B → GPIO27
 Switch C → GPIO22
 Switch D → GPIO23
 GND      → GND
+```
+
+### Raspberry Pi Pico 2 — Input Switches
+
+```
+GP0  → UART TX (to Pi 5 RX when using direct UART)
+GP1  → UART RX (to Pi 5 TX when using direct UART)
+GP15 → Reset button
+GP16 → Reset (reassigned to clock later)
+GP18 → SW_C
+GP19 → SW_B
+GP20 → SW_A
+GP22 → SW_D
 ```
 
 -----
